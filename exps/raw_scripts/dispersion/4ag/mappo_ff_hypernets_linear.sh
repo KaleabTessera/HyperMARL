@@ -1,0 +1,2 @@
+#!/bin/bash
+python baselines/MAPPO/mappo_ff_shared_weights_linear_hypernets.py --config-name mappo_ff_shared_weights_hypernets_vmas_dispersion.yaml -m SEED=30,1,42,72858,2300658,2,3,4,5,6  EXP_NAME=dispersion_part1 EXP_TAGS=[MAPPO,FF,Shared_Weights,CPU,Hypernets,Linear,GradVar] +env.ENV_KWARGS.one_hot_encode_agent_id=True env.ENV_KWARGS.share_reward=False USE_AGENT_ID_EMBEDDINGS=False +COMPUTE_POLICY_GRADIENT_NORM=True

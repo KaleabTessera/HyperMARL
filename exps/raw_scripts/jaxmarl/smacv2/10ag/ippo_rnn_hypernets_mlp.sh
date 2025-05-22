@@ -1,0 +1,2 @@
+#!/bin/bash
+python baselines/IPPO/ippo_rnn_smax_mlp_hypernets_eval.py -m  MAP_NAME=smacv2_10_units SEED=30,1,42,72858,2300658 +USE_AGENT_ID_EMBEDDINGS=True +HYPERNET_HIDDEN_DIMS=[64] +HYPERNET_EMBEDDING_DIM=4 LR=0.005 +EXP_TAGS=[IPPO,RNN,MLP,Hypernets,Embedding,Table3]

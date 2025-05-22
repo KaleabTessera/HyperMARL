@@ -1,0 +1,64 @@
+defaults:
+  - env: dispersion
+  - _self_
+
+ENV_NAME: ${env.ENV_NAME}
+
+# PPO Params
+ALG: "Hypermarl(MAPPO)"
+LR: 5e-4
+NUM_ENVS: 16
+NUM_STEPS: 128
+TOTAL_TIMESTEPS: 20e6
+UPDATE_EPOCHS: 4
+NUM_MINIBATCHES: 2
+GAMMA: 0.99
+GAE_LAMBDA: 0.95
+CLIP_EPS: 0.2
+ENT_COEF: 0.01
+VF_COEF: 0.5
+MAX_GRAD_NORM: 0.5
+ACTIVATION: "relu"
+ANNEAL_LR: False
+
+# Hypernet Params
+# no embedding by default, just use one hot encoding agent ids
+HYPERNET_EMBEDDING_DIM: null
+USE_AGENT_ID_EMBEDDINGS: False
+USE_BIAS_IN_HYPERNET: True
+
+# Seeds
+SEED: 30
+NUM_SEEDS: 1
+
+# Network Architectures
+ACTOR_LAYERS: [64, 64]
+CRITIC_LAYERS: [64, 64]
+
+# WandB Params
+ENTITY: null
+PROJECT: "enable-specialisation"
+WANDB_MODE: "disabled"
+EXP_NAME: ${hydra:runtime.config_name}
+EXP_TAGS: ["${ALG}", "FF", "Shared_Weights", "${ENV_NAME}","WIP", "Hypernets"]
+
+# Unique run name
+RUN_NAME: "${ENV_NAME}__${EXP_NAME}__${SEED}__${now:%Y-%m-%d_%H-%M-%S}"
+GROUP: "${ENV_NAME}_${EXP_NAME}"
+
+# Evaluation
+EVAL_INTERVAL: 100000 # TOTAL_TIMESTEPS // 200
+EVAL_EPISODES: 32
+EVAL_DETERMINISTIC: True
+
+# Environment Configuration
+# Args from env are passed to both train and eval envs
+TEST_ENV_KWARGS: {}
+TRAIN_ENV_KWARGS: {auto_reset: True}
+ACTION_SPACE_TYPE: "discrete"
+
+# Logging and Checkpointing
+CAPTURE_VIDEO_INTERVAL: 5000000  # TOTAL_TIMESTEPS // 4
+CHECKPOINT_INTERVAL: 5000000  # TOTAL_TIMESTEPS // 4
+CHECKPOINT: True
+HANDLE_TERMINAL_OBS: True

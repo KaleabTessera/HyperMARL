@@ -1,0 +1,40 @@
+"LR": 2.5e-4
+"NUM_ENVS": 128
+"NUM_STEPS": 128
+# "NUM_ENVS": 16
+# "NUM_STEPS": 128
+"TOTAL_TIMESTEPS": 1e7
+"UPDATE_EPOCHS": 4
+"NUM_MINIBATCHES": 4
+"GAMMA": 0.99
+"GAE_LAMBDA": 0.95
+"CLIP_EPS": 0.2
+"ENT_COEF": 0.01
+"VF_COEF": 0.5
+"MAX_GRAD_NORM": 0.5
+"ACTIVATION": "relu"
+"ANNEAL_LR": True
+"NUM_SEEDS": 10
+
+"ENV_NAME": "HeuristicEnemySMAX"
+"MAP_NAME": "2s3z"
+"SEED": 0
+"ENV_KWARGS": 
+  "see_enemy_actions": True
+  "walls_cause_death": True
+  "attack_mode": "closest"
+
+
+DISABLE_JIT: False
+DEVICE: cpu
+ACTOR_HIDDEN_DIM: 64
+CRITIC_HIDDEN_DIM: 64
+ADAM_EPS: 1e-5
+SCALE_CLIP_EPS: False
+RATIO_CLIP_EPS: null
+ADVANTAGE_UNROLL_DEPTH: 16
+
+# WandB Params
+"ENTITY": null
+"PROJECT": "jaxmarl-smax"
+"WANDB_MODE" : "disabled"

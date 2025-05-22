@@ -1,0 +1,2 @@
+#!/bin/bash
+python baselines/IPPO/ippo_ff_shared_weights_linear_hypernets.py --config-name ippo_ff_shared_weights_hypernets_vmas_navigation.yaml -m SEED=30,1,42,72858,2300658 EXP_NAME=dico_comparison EXP_TAGS=[IPPO,FF,Hypernets,v2.3,Dico,Part2,Table2] +env.ENV_KWARGS.one_hot_encode_agent_id=True +EVAL_PARALLEL=True env.ENV_KWARGS.agents_with_same_goal=4 env.ENV_KWARGS.collisions=False env.ENV_KWARGS.n_agents=8

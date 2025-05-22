@@ -1,0 +1,12 @@
+ENV_NAME: "vmas-dispersion"
+# https://github.com/proroklab/ControllingBehavioralDiversity/blob/main/het_control/conf/task/vmas/dispersion.yaml
+ENV_KWARGS:
+  share_reward: True 
+  food_radius: 0.08
+  max_steps: 100
+  n_agents: 4
+  n_food: 4
+  # we penalise by time to be able to compare with the other algorithms
+  penalise_by_time: True
+  continuous_actions: False
+

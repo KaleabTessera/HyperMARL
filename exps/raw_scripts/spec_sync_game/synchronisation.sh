@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python baselines/Matrix_Game/specialisation_game_with_state_jax.py num_agents=2 num_foods=2 hidden_size=8 game_type=synchronisation && python baselines/Matrix_Game/specialisation_game_with_state_jax.py num_agents=4 num_foods=4 hidden_size=16 game_type=synchronisation && python baselines/Matrix_Game/specialisation_game_with_state_jax.py num_agents=8 num_foods=8 hidden_size=32 game_type=synchronisation && python baselines/Matrix_Game/specialisation_game_with_state_jax.py num_agents=16 num_foods=16 hidden_size=64 game_type=synchronisation

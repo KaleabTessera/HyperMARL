@@ -1,0 +1,32 @@
+# Configuration for stateful matrix games
+
+# Game type: SPECIALISATION or SYNCHRONISATION
+game_type: specialisation
+
+# Number of agents in the game
+num_agents: 3
+
+# Number of possible actions/foods
+num_foods: 3
+
+# Training parameters
+max_train_steps: 10000  # Maximum number of environment steps for training
+eval_episodes: 100
+max_steps_per_episode: 10
+batch_size: 32
+hidden_size: 32
+num_seeds: 10
+eval_step_interval: 1000  # Evaluate every this many environment steps
+learning_rate: 0.01
+optim: sgd
+max_grad_norm: 0.5 
+compute_grad_conflict: false
+
+# New hypernetwork configuration parameters
+hypernet:
+  use_agent_id_embeddings: true
+  embedding_dim: null  # null means use hidden_size // num_agents as default
+  hidden_dims: [16]  # List format for flexibility
+  use_custom_init: true  
+  init_type: orthogonal
+  embedding_init_scale: 1.414 # np.sqrt(2) default gain commonly used for relu networks (e.g. https://docs.pytorch.org/docs/stable/nn.init.html)
