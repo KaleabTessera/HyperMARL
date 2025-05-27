@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2412.04233"><img src="https://img.shields.io/badge/arXiv-2412.04233-b31b1b.svg" alt="arXiv"></a>
-  <a href="https://colab.research.google.com/github/kaleabtessera/hypermarl/blob/main/examples/quickstart.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+  <a href="https://colab.research.google.com/github/kaleabtessera/hypermarl/blob/main/quickstart.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
   <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>
 </p>
 
@@ -33,7 +33,6 @@ We propose **HyperMARL** -- a MARL architecture that uses *agent-conditioned hyp
 | 📊 **Competitive results** | Matches or is competitive with NoPS, FuPS (+/– ID) and three diversity-promoting baselines **across a wide range of MARL benchmarks** (including Dispersion and Navigation from VMAS, SMAX, MAMuJoCo, and custom environments), diverse task types (homogeneous, heterogeneous, and mixed), and agent counts (2–20). We also show HyperMARL maintains *behavioural diversity* comparable to NoPS. |
 | 🔌 **Easy integration** | Easy integration into existing on- or off-policy algorithms with minimal code changes — no extra loss terms, diversity hyperparameters (i.e. knowing the optimal diversity required for a task), or sequential updates. We include JAX (main) and Pytorch implementations. |
 
-> 📄 Full paper **[here](...)**
 
 ---
 
@@ -41,7 +40,7 @@ We propose **HyperMARL** -- a MARL architecture that uses *agent-conditioned hyp
 
 |        | Description                 | Link                                    |
 |--------|-----------------------------|------------------------------------------|
-| 🚀     | **Quick Look**             | `quickstart.ipynb`                       |
+| 🚀     | **Quick Look**             | [`quickstart.ipynb`](quickstart.ipynb)                       |
 | 📈     | **Reproduce results**       | [`docs/reproduce.md`](docs/reproduce.md) |
 | 📚     | **Read the paper**          | [arXiv:2412.04233](https://arxiv.org/abs/2412.04233) |
 | 🔍     | **Example (JAX Train + Non-JAX Env)**          | [`ippo_hypermarl`](baselines/IPPO/ippo_ff_shared_weights_mlp_hypernets.py)                 |
