@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2412.04233"><img src="https://img.shields.io/badge/arXiv-2412.04233-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://colab.research.google.com/github/kaleabtessera/hypermarl/blob/main/examples/quickstart.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
   <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>
 </p>
 
@@ -50,7 +51,7 @@ We propose **HyperMARL** -- a MARL architecture that uses *agent-conditioned hyp
 
 ## TODO
 - [ ] Update HARL fork link.
-- [ ] Add quickstart notebook.
+- [x] Add quickstart notebook.
 
 ## Citation 📝
 If you use HyperMARL in your work, please cite us as follows:
