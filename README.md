@@ -16,6 +16,12 @@
 
 If your prefer a static image, here is the [PNG version](assets/hypermarl.png).
 
+---
+
+> **📄 Update:** HyperMARL was accepted as a [workshop paper](https://openreview.net/forum?id=K6Jfn1snTl) at RLC 2025!
+
+---
+
 ## TL;DR 📜
 **🧩 Problem**  
 Independent policies (**NoPS**) scale poorly and are sample-inefficient, while fully shared policies (**FuPS**) are efficient but can collapse to uniform behaviour due to cross-agent interference -- which can be exacerbated when a shared network **couples** observations and agent IDs.
