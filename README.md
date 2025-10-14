@@ -17,6 +17,7 @@
 If your prefer a static image, here is the [PNG version](assets/hypermarl.png).
 
 ---
+> **📄 Update:** HyperMARL was accepted at  [NeurIPS 2025](https://neurips.cc/virtual/2025/poster/119896) 🎉 ! Camera ready and some extra docs will be released soon.
 
 > **📄 Update:** HyperMARL was accepted as a [workshop paper](https://openreview.net/forum?id=K6Jfn1snTl) at RLC 2025!
 
@@ -61,10 +62,12 @@ We propose **HyperMARL** -- a MARL architecture that uses *agent-conditioned hyp
 ## Citation 📝
 If you use HyperMARL in your work, please cite us as follows:
 ```bibtex
-@article{tessera2024hypermarl,
+@inproceedings{
+  tessera2025hypermarl,
   title={HyperMARL: Adaptive Hypernetworks for Multi-Agent RL},
   author={Tessera, Kale-ab Abebe and Rahman, Arrasy and Storkey, Amos and Albrecht, Stefano V},
-  journal={arXiv preprint arXiv:2412.04233},
-  year={2024}
+  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+  year={2025},
+  url={https://openreview.net/forum?id=56CgYnf9Dr}
 }
 ```
