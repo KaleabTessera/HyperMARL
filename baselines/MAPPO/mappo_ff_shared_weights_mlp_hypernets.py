@@ -933,7 +933,7 @@ def make_train(config):
 
             # Extract and save agent embeddings periodically
             if update % config.get("SAVE_EMBEDDINGS_INTERVAL", 5000) == 0 or final_update:
-                extract_and_save_agent_embeddings(train_state.params, global_step, config, wb_run)
+                extract_and_save_agent_embeddings(runner_state[0].params, global_step, config, wb_run)
                 
             # Save checkpoints periodically
             if (final_update) or (next_checkpoint_step and global_step >= next_checkpoint_step):
