@@ -55,7 +55,7 @@ export PYTHONPATH="${PYTHONPATH}:`pwd`"
 
 If you want to run on GPU, install the following:
 ```bash
-pip install --upgrade "jax[cuda]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+pip install --upgrade "jax[cuda]==0.4.25" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 ```
 
 ### JaxMARL Experiments
@@ -74,9 +74,9 @@ pip install flax==0.9.0
 
 If you want to run on GPU, install the following:
 ```bash
-pip install -U "jax[cuda12]"
+pip install -U "jax[cuda12]==0.4.33"
 ```     
-<!-- pip install --upgrade "jax[cuda]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html -->
+<!-- pip install --upgrade "jax[cuda]==0.4.33" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html -->
 
 ## Experiments
 
