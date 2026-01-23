@@ -2,6 +2,7 @@ import numpy as np
 import wandb
 import matplotlib.pyplot as plt
 import numpy as np
+import scienceplots
 
 # Keep the same helper functions
 def is_colab():
