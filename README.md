@@ -65,7 +65,7 @@ If you use HyperMARL in your work, please cite us as follows:
 @inproceedings{
   tessera2025hypermarl,
   title={HyperMARL: Adaptive Hypernetworks for Multi-Agent RL},
-  author={Tessera, Kale-ab Abebe and Rahman, Arrasy and Storkey, Amos and Albrecht, Stefano V},
+  author={Tessera, {Kale-ab} Abebe and Rahman, Arrasy and Storkey, Amos and Albrecht, Stefano V},
   booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
   year={2025},
   url={https://openreview.net/forum?id=56CgYnf9Dr}
